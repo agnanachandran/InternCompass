@@ -1,4 +1,6 @@
-# Compass
+NOTE: This repository serves as a read-only copy of the code that used to run interncompass.io 
+
+# InternCompass
 
 ## Setup
 
