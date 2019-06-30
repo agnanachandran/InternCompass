@@ -1,0 +1,93 @@
+import mirrorCreator from 'mirror-creator';
+
+export const actionTypes = mirrorCreator([
+  'APPEND_REVIEW_COMMENTS',
+  'APPEND_SEARCH_RESULTS',
+  'CHANGE_PASSWORD_ERROR',
+  'CLEAR_CONFIRMATION',
+  'CLEAR_SEARCH_PARAMS',
+  'CLEAR_SNACKBAR_MESSAGE',
+  'CLEAR_REVIEW_SUCCESS_MESSAGE',
+  'CLEAR_SIGN_IN_ERROR',
+  'CONFIRMATION_SENT',
+  'CREATE_CRITIQUE',
+  'CREATE_CRITIQUE_ERROR',
+  'CREATED_CRITIQUE',
+  'DELETE_CRITIQUE_IN_PROGRESS',
+  'DELETED_COMMENT',
+  'DELETED_CRITIQUE',
+  'INIT_INTERVIEW_QUESTION_FILTERS',
+  'POST_COMMENT',
+  'POST_COMMENT_ERROR',
+  'POSTED_COMMENT',
+  'RECEIVE_CRITIQUE',
+  'RECEIVE_CRITIQUES',
+  'RECEIVE_CURRENCY',
+  'RECEIVE_JOB',
+  'RECEIVE_REVIEW',
+  'RECEIVE_RECENT_REVIEWS_LIST',
+  'RECEIVE_CREATE_REVIEW',
+  'RECEIVE_USER',
+  'RECEIVE_USER_SIGNIN',
+  'RECEIVE_USER_SIGNUP',
+  'SET_COMPANIES',
+  'SET_COMPANY',
+  'SET_INTERVIEW_QUESTION',
+  'SET_INTERVIEW_QUESTIONS_LIST',
+  'SET_INTERVIEW_QUESTION_CURRENT_FILTER',
+  'SET_IS_FOLLOWING_COMPANY',
+  'SET_NAVBAR_SEARCH_QUERY_STRING',
+  'SET_NOTIFICATIONS',
+  'SET_RECENT_REVIEWS_LIST',
+  'SET_RECOMMENDED_COMPANIES',
+  'SET_REDIRECT',
+  'SET_REVIEW',
+  'SET_REVIEW_LIST',
+  'SET_REVIEW_COMMENT',
+  'SET_REVIEW_COMMENTS_LIST',
+  'SET_REVIEW_VOTE',
+  'SET_REVIEW_VOTE_IN_LIST',
+  'SET_SEARCH_PARAMS',
+  'SET_SNACKBAR_MESSAGE',
+  'SET_WRITE_REVIEW_COMPANY',
+  'SIGN_IN_ERROR',
+  'SIGN_UP_ERROR',
+  'SIGN_UP_LOADING',
+  'USER_PROFILE_UPDATED',
+  'USER_REVIEW_DELETED',
+  'USER_SIGN_IN',
+  'USER_SIGN_OUT',
+]);
+
+export const colours = {
+  MATERIAL_BLUE: '#2196f3',
+  MATERIAL_BLUE_DARK: '#087dda',
+  MATERIAL_BLUE_GREY: '#607D8B',
+  MATERIAL_BLUE_GREY_DARK: '#455A64',
+  MATERIAL_GREEN: '#00c853',
+  MATERIAL_GREEN_DARK: '#00af3a',
+  MATERIAL_RED: '#d32f2f',
+  MATERIAL_RED_DARK: '#ba1616',
+  SPINNER_DEFAULT: '#00bcd4',
+};
+
+export const dataSources = mirrorCreator([
+  'COMPANY',
+  'JOB',
+]);
+
+export const dataSourcesToUrls = {
+  COMPANY: '/suggest.json',
+  JOB: '/jobs/search.json',
+};
+
+export const routingUrls = {
+  SEARCH: '/search?query=&page=1&order=most_reviews&location_filter[]='
+};
+
+// Keep in sync with /app/models/notification.rb
+export const NotificationCategories = mirrorCreator([
+  'critique_comment',
+  'report_critique',
+  'report_critique_comment',
+]);

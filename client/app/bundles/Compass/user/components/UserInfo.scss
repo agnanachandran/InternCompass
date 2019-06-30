@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  padding: 12px 0px 10px;
+}
+
+.info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userName {
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.headline {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.bio {
+  margin-top: 3px;
+}
+
+.bottomInfo {
+  color: $subtitle-gray;
+  font-size: 15px;
+}
+
+.url {
+  margin-right: 8px;
+  &:hover {
+    color: $link-color;
+  }
+  @include transition(color 0.5s ease);
+}
+
+.updateIcon {
+  font-size: 18px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: $link-color;
+}
+
+.updateLabel {
+  color: $link-color;
+}

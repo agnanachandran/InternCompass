@@ -1,0 +1,15 @@
+.hide {
+  display: none;
+}
+
+.suggestionsTextContainer {
+  color: #888;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestionsTagsContainer {
+  max-width: 600px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}

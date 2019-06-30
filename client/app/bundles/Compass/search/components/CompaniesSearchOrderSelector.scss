@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $medium-gray;
+}
+
+.sortSelector {
+  color: $medium-gray;
+  border-color: #e5e5e5;
+  &:focus {
+    outline: none;
+  }
+}
+
+.sortLabel {
+  cursor: default;
+  color: $dark-gray;
+}

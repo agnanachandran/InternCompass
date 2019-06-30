@@ -1,0 +1,85 @@
+.label {
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+.field {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12pt;
+  margin-bottom: 15px;  
+}
+
+.outerContainer {
+  columns: 2;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  padding-left: 10px;
+  padding-top: 8px;
+  width: 100%;
+  font-size: 12pt;
+  margin-bottom: 10px;
+  min-height: 75px;
+  resize: none; 
+}
+
+
+.title {
+  font-size: 16pt;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.visible {
+  display: inline;
+  margin-left: 10px;
+}
+
+.formContainer {
+  padding: 10px;
+}
+
+.gone {
+  display: none;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.submitMsg {
+  margin-bottom: 20px;
+}
+
+.centeredTextContainer {
+  text-align: center;
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer {
+  float: right;
+}
+
+.centerContainer,
+.container {
+  min-height: 400px;
+  padding: 15px;
+}

@@ -1,0 +1,184 @@
+$bottom-border-width: 3px;
+
+.container {
+  position: fixed;
+  width: 100%;
+  min-width: 550px;
+  color: white;
+  z-index: $navbar-footer-z-index;
+  @include transition(background-color 0.5s ease);
+}
+
+.innerContainer {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin: 0 auto;
+  background-color: inherit;
+}
+
+.transparentNavbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.1);
+}
+
+.darkNavbar {
+  background-color: $nav-color;
+}
+
+.title {
+  float: left;
+  padding: 0px $navbar-title-vertical-padding;
+  display: flex;
+  align-items: center;
+  height: $navbar-outer-height - 4px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+// Non-mobile classes
+.navItemsContainer {
+  display: inline;
+}
+
+.navHamburgerMenu {
+  cursor: pointer;
+  float: right !important; // Override navItem
+}
+
+.itemList {
+  padding-left: 0px;
+  display: flex;
+}
+
+.itemListLeft {
+  @extend .itemList;
+  float: left;
+}
+
+.itemListRight {
+  @extend .itemList;
+  float: right;
+}
+// End non-mobile classes
+
+// Mobile classes
+.navItemsContainerMobileOpen {
+  display: block;
+  clear: both;
+  &:after {
+    @include clearfix;
+  }
+}
+
+.navItemsContainerMobileClosed {
+  display: none;
+}
+
+.itemListMobile {
+  text-align: center;
+  padding: 0px;
+  li {
+    text-align: center;
+    display: flex; // Make list items block elements for mobile
+    border: none;
+  }
+}
+
+.itemListLeftMobile {
+  @extend .itemListMobile;
+  li {
+    border-top: 1px dashed gray;
+  }
+}
+
+.itemListRightMobile {
+  @extend .itemListMobile;
+  li {
+    border-top: 1px dashed gray;
+  }
+}
+// End mobile classes
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: $navbar-outer-height;
+  box-sizing: border-box;
+  padding: 0px 15px;
+}
+
+.itemText {
+  @extend .item;
+  font-size: $navbar-font-size;
+}
+
+.itemPicture {
+  @extend .item;
+}
+
+.notificationsIcon {
+  // We add padding in the button itself to create a larger click target instead
+  padding: 0px;
+}
+
+.pushRight {
+  float: right;
+}
+
+.writeReviewIcon {
+  margin-right: 8px;
+}
+
+.transparentNavbarItem {
+  color: white;
+  border-bottom: $bottom-border-width solid transparent !important;
+}
+
+.searchNavItem {
+  border-color: #00a6f0;
+}
+
+.critiquesNavItem {
+  border-color: #00bcd4;
+}
+
+.selectedItem {
+  color: white;
+  border-width: $bottom-border-width;
+  border-bottom-style: solid;
+}
+
+.unselectedItem {
+  border-width: $bottom-border-width;
+  border-bottom-style: solid;
+  border-color: transparent;
+  color: #ddd;
+  @include transition(color 0.5s ease);
+
+  &:hover {
+    color: white;
+  }
+}
+
+.signUpNavItemSpan {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+
+  @include transition(background-color 0.25s ease);
+  &:hover {
+    background-color: rgba(150, 150, 150, 0.2);
+  }
+}
+
+.newNavItem {
+  color: white;
+  font-size: 9px;
+  margin-left: 6px;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 3px;
+}

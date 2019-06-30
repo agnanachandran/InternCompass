@@ -1,0 +1,41 @@
+.container {
+  background-color: white;
+  @include distinguish-box-shadow;
+}
+
+.innerContainer {
+  @include wide-centered-content-container;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobSelectorContainer {
+  display: flex;
+}
+
+.jobSelectorText {
+  color: #555;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.jobSelectorCaret {
+  color: #aaa;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.applyButton {
+  margin-left: 10px;
+}
+
+.writeReviewButton {
+  margin-left: 10px;
+  @media only screen and (max-width: $breakpoint) {
+    display: none;
+  }
+}

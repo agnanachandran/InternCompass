@@ -1,0 +1,18 @@
+.followingCompaniesTitle {
+  font-size: $user-profile-heading-size !important;
+}
+.outerContainer {
+  color: $medium-gray;
+}
+
+.userInfoOuterContainer {
+  background-color: white;
+}
+
+.userInfoInnerContainer {
+  @include narrow-centered-content-container;
+}
+
+.userContentContainer {
+  @include narrow-centered-content-container;
+}

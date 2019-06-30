@@ -1,0 +1,19 @@
+.paper {
+  position: relative;
+}
+
+.loadingDiv {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: $admin-paper-loading-div-z-index; // to cover Material UI buttons
+}
+
+.spinnerParent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -52px;
+  margin-left: -52px;
+}

@@ -1,0 +1,61 @@
+.container {
+  @include border-card;
+  margin-bottom: 8px;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userAndCritiqueInfoContainer {
+  display: flex;
+  width: 100%;
+}
+
+.critiqueLink {
+  padding: 18px;
+  display: flex;
+}
+
+.info {
+  width: 100%;
+  margin-left: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userName {
+  color: $medium-gray;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.headline {
+  color: $medium-gray;
+  font-size: 14px;
+  margin-bottom: 1px;
+  @include one-line-ellipsize;
+}
+
+.date {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.description {
+  color: $medium-gray;
+  margin-top: 5px;
+  // white-space: pre-line; Reduce bad effects of long description abuse by commenting this out
+  max-width: 80%;
+  font-size: 15px;
+}
+
+.commentCountContainer {
+  display: flex;
+  align-items: flex-end;
+  color: $gray;
+  @include one-line-ellipsize;
+}

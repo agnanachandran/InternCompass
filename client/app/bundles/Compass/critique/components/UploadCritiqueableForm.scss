@@ -1,0 +1,108 @@
+$form-height: 300px;
+$upload-drop-icon-font-size: 100px;
+
+.header {
+  color: $dark-gray;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.uploadDropContainer {
+  @include col(6, $horizontal-gap: 12px);
+  @media only screen and (max-width: $breakpoint) {
+    box-sizing: content-box;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.uploadDrop {
+  border: 1px dashed $gray;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  @media only screen and (max-width: $breakpoint) {
+    box-sizing: content-box;
+  }
+  color: $medium-gray;
+  height: $form-height;
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadDropIcon {
+  color: $gray;
+  font-size: $upload-drop-icon-font-size;
+}
+
+.uploadDropSuccessIcon {
+  color: $material-green;
+  font-size: $upload-drop-icon-font-size;
+}
+
+.uploadDropFileNameText {
+  color: $gray;
+  margin: 0px 16px 16px;
+  text-align: center;
+}
+
+.uploadDropText {
+  margin: 0px 16px 16px;
+  text-align: center;
+}
+
+.critiqueInfoContainer {
+  @include col(6, $horizontal-gap: 0px);
+  height: $form-height;
+  color: $medium-gray;
+  padding-top: 12px;
+  @include border-card;
+  background-color: white;
+  @media only screen and (max-width: $breakpoint) {
+    box-sizing: content-box;
+  }
+}
+
+.critiqueInfo {
+  padding-left: 16px;
+}
+
+.label {
+  display: block;
+}
+
+.description {
+  @include textarea;
+  margin-top: 4px;
+  height: 220px;
+  width: 90%;
+  resize: none;
+  font-size: 15px;
+}
+
+.bottomButtonBar {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitLabel {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.disclaimer {
+  margin-top: 12px;
+  color: $medium-gray;
+
+  span {
+    font-weight: bold;
+  }
+}

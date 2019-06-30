@@ -1,0 +1,45 @@
+.btn {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.container {
+  padding: 25px 80px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.info {
+  color: $medium-gray;
+  margin-bottom: 25px;
+}
+
+.bioContainer {
+  width: 100%;
+}
+
+.bioLabel {
+  color: $label-color;
+}
+
+.bio {
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  @include textarea;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  color: $label-color;
+}

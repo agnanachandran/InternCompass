@@ -1,0 +1,10 @@
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.inner {
+  padding-top: $navbar-outer-height;
+  padding-bottom: $footer-height + $footer-padding * 2;
+  min-height: 100%;
+}

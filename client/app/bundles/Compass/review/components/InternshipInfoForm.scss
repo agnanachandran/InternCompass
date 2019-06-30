@@ -1,0 +1,76 @@
+$info-left-margin: 50px;
+$info-bottom-margin: 8px;
+
+.container {
+}
+
+.companyAndJobContainer {
+  @include row;
+}
+
+.companyContainer {
+  @include col(6, 12, $info-left-margin, $info-bottom-margin);
+}
+
+.jobTitleContainer {
+  @include col(6, 12, $info-left-margin, $info-bottom-margin);
+}
+
+.locationAndSalaryContainer {
+  @include row;
+}
+
+.locationContainer {
+  @include col(6, 12, $info-left-margin, $info-bottom-margin);
+}
+
+.salaryContainer {
+  @include col(6, 12, $info-left-margin, $info-bottom-margin);
+}
+
+.salaryFieldContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+.salaryField {
+  border: $input-border;
+  padding: $input-padding;
+  border-radius: 3px;
+  font-size: 16px;
+  max-width: 80px;
+  margin-right: 8px;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+}
+
+.salaryFieldSelector {
+  flex: 1 1 auto;
+  color: $label-color;
+  border: $input-border;
+  padding-left: 5px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.label {
+  color: $label-color;
+}
+
+.fieldContainer {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.infoIcon {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: $label-color;
+  display: inline-block;
+}
+

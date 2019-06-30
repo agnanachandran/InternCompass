@@ -1,0 +1,21 @@
+.container {
+  background-color: $body-background-color;
+}
+
+.innerContainer {
+  @include medium-wide-centered-content-container;
+}
+
+.resumeContainer {
+  @include col(8);
+}
+
+.commentsContainer {
+  @include col(4);
+}
+
+.canvas {
+  width: 100% !important;
+  height: auto !important;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 1px 6px, rgba(0, 0, 0, 0.10) 0px 1px 4px;
+}

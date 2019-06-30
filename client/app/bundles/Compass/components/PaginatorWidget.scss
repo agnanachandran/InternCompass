@@ -1,0 +1,25 @@
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  color: $medium-gray;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  @include border-card();
+  @include transition(color 0.25s ease);
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.invisibleButton {
+  visibility: hidden;
+}
+
+.pageCount {
+  color: $subtitle-gray;
+}

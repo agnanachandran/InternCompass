@@ -1,0 +1,63 @@
+.container {
+  background-color: $footer-color;
+  border-top: 1px solid $footer-border-top-color;
+  color: $medium-gray;
+  padding: $footer-padding 0;
+  height: $footer-height;
+  overflow: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: $navbar-footer-z-index;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: $page-width;
+}
+
+.sideContainer {
+  display: flex;
+}
+
+.link {
+  @include transition(color 0.25s ease);
+  font-size: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.logoImage {
+  height: 22px;
+  margin-right: 6px;
+  &:hover {
+    @include spin-animation(0.5s);
+  }
+}
+
+.social {
+  font-size: 16px;
+}
+
+.facebookLink {
+  margin-left: 6px;
+}
+
+.fbLikeShareContainer {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: -1px;
+}
+
+.alignCenter {
+  display: flex;
+  align-items: center;
+}

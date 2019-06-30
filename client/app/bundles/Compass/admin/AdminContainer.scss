@@ -1,0 +1,62 @@
+.colMenu {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 8px 0 8px -8px #BBB;
+  z-index: $admin-containers-z-index;
+}
+
+.colContent {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 250px;
+  box-sizing: border-box;
+  z-index: $admin-containers-z-index;
+  .colContentInner {
+    padding: 16px;
+  }
+}
+
+.colMenuTitle {
+  text-align: center;
+  padding: 16px 8px;
+  font-size: 18px;
+  color: $nav-color;
+  background-color: white;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.menuParent {
+  position: relative;
+  height: 100%;
+  width: 250px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.menuListItem {
+  > div {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+  }
+  &:first-child {
+    > div {
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+
+.menuListItemSelected {
+  > div {
+    color: white;
+    background-color: #576276;
+  }
+}
+
+.menuListItemIcon {
+  margin-right: 8px;
+}

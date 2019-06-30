@@ -1,0 +1,130 @@
+$job-header-container-background-color: white;
+$reviews-header-background-color: #f9f9f9;
+$padding: $company-review-padding;
+$title-font-size: 24px;
+
+.container {
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+
+.jobHeaderContainer {
+  background-color: $job-header-container-background-color;
+  padding: 14px $padding 14px;
+  color: $label-color;
+}
+
+.jobInfoInnerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobInfoLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.jobTitle {
+  font-weight: 400;
+  font-size: $title-font-size;
+  color: $dark-gray;
+  text-align: left;
+}
+
+.jobLocation {
+  font-weight: 400;
+  font-size: 16px;
+  color: $medium-gray;
+  text-align: left;
+}
+
+.jobInfoRightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.jobInfoInnerRightContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.averageRatingContainer {
+  text-align: center;
+}
+
+.averageRatingWidget {
+  color: $medium-gray;
+}
+
+.averageRatingDescription {
+  color: $dark-gray;
+}
+
+.salaryContainer {
+  margin-right: 30px;
+}
+
+.salaryValue {
+  color: $medium-gray;
+  text-align: center;
+  font-size: $title-font-size;
+}
+
+.salaryDescription {
+  color: $dark-gray;
+  text-align: center;
+}
+
+.perksButtonContainer {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.perksButton {
+  color: $medium-gray;
+  font-size: $title-font-size;
+}
+
+.perksButtonDescription {
+  color: $dark-gray;
+}
+
+.perksContainer {
+  max-width: 400px;
+  padding: 5px;
+  color: $medium-gray;
+  text-align: center;
+}
+
+.reviewsHeader {
+  background-color: $reviews-header-background-color;
+  padding: 10px $padding 12px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewsHeaderTitle {
+  font-size: 20px;
+  color: $dark-gray;
+  text-align: left;
+}
+
+.sortContainer {
+  color: $dark-gray;
+}
+
+.sortSelector {
+  color: $medium-gray;
+  border-color: $dark-gray;
+  &:focus {
+    outline: none;
+  }
+}
+
+.reviewsContainer {
+  background-color: $body-background-color;
+}

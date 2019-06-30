@@ -1,0 +1,13 @@
+.innerContainer {
+  @include wide-centered-content-container;
+  @include row;
+}
+
+.jobsContainer {
+  @include col(9);
+}
+
+.sidebarContainer {
+  @include col(3);
+  min-width: 250px;
+}

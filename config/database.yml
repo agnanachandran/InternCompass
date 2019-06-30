@@ -1,0 +1,17 @@
+default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    timeout: 5000
+
+development:
+    <<: *default
+    database: compass
+    username: postgres
+    password: password
+
+production:
+    <<: *default
+    database: compass_production
+    username: <%= ENV["PG_USERNAME"] %>
+    password: <%= ENV["PG_PASSWORD"] %>

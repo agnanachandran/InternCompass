@@ -1,0 +1,22 @@
+.input {
+  border: $input-border;
+  border-radius: 3px;
+  padding: $input-padding;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  color: $label-color;
+}
+
+.label {
+  color: $label-color;
+}
+
+.container {
+  width: 45%;
+}
+
+.inputContainer {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}

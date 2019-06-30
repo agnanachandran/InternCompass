@@ -1,0 +1,242 @@
+// Variables
+$breakpoint: 768px;
+$navbar-height: 60px;
+$navbar-outer-height: 50px;
+$navbar-font-size: 15px;
+$navbar-title-vertical-padding: 14px;
+$footer-height: 25px;
+$footer-padding: 10px;
+$max-page-width: 1000px;
+$page-width: 95%;
+$medium-wide-max-page-width: 1200px;
+$medium-wide-page-width: 95%;
+$wide-max-page-width: 1600px;
+$wide-page-width: 90%;
+$review-component-padding: 60px;
+$company-review-padding: 20px;
+$input-padding: 6px;
+$input-border: 1px solid #bebebe;
+$user-profile-heading-size: 22px;
+
+// z-indices
+$admin-containers-z-index: 0;
+$admin-paper-loading-div-z-index: 1;
+$navbar-footer-z-index: 2;
+
+// Colors
+$nav-color: #33485f;
+$nav-color-light: #576276;
+$footer-color: #f2f2f2;
+$footer-border-top-color: #e4e4e4;
+$body-background-color: #f9f9f9;
+$focus-gray: #f6f6f6;
+$review-gray: #f3f3f3;
+$light-gray: #f1f1f1;
+$border-gray: #c5c5c5;
+$gray: #a5a5a5;
+$subtitle-gray: #777777;
+$medium-gray: #555555;
+$dark-gray: #454545;
+$easy-difficulty: #5cb85c;
+$moderate-difficulty: #f0ad4e;
+$hard-difficulty: #d9534f;
+$dark-link-color: #1565C0;
+$link-color: #0488da;
+$label-color: #444;
+$material-blue: #2196f3;
+$material-green: #00C853;
+$star-light-gray-color: #777777;
+$login-blue: #00acc1;
+$upvote-color: #66BB6A; // Green
+$downvote-color: #EF5350; // Red
+$star-color: $material-blue;
+$perk-tag-color: #eeeeee;
+$button-primary-color: $material-blue;
+
+$companies-list-number-cards-per-row: 6;
+
+$companies-list-item-width: 100px;
+$border-card-width: 1px;
+$companies-list-item-padding: 16px;
+$companies-list-item-margin-right: 8px;
+
+$see-more-btn-padding-right: 14px;
+
+// Site-wide selectors
+body {
+  background-color: $body-background-color;
+}
+
+// Mixins
+
+@mixin font-family($font) {
+  font-family: $font, Helvetica, Arial, sans-serif;
+}
+
+// From http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+@mixin clearfix() {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@mixin link() {
+  color: $link-color;
+  cursor: pointer;
+}
+
+@mixin basic-input-shadow() {
+  box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.1);
+}
+
+@mixin distinguish-box-shadow() {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .05);
+}
+
+@mixin background-linear-gradient($start, $end) {
+  background: $start;
+  background: linear-gradient(to left, $start, $end);
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin hardware-accelerate() {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+@mixin filter-blur($blur) { // Note: be careful using this, it can cause lag, consider pre-blurring if it's an image
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  filter: blur($blur);
+}
+
+@mixin box-shadow($shadows...) { // Note: be careful using this, it can cause lag, consider adding shadows beforehand if it's an image
+  -webkit-box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+@mixin spin-animation($time) {
+  -webkit-animation: spin $time linear infinite;
+  -moz-animation: spin $time linear infinite;
+  animation: spin $time linear infinite;
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+// border-serrated - a zig zag triangle border with linear gradient
+// (from https://cocreate.localmotors.com/blog/post/zig-zag-borders-in-css/1205/)
+@mixin border-top-serrated($size, $color-outer) {
+  & {
+    position: relative;
+    overflow: auto;
+    padding-top: $size;
+  }
+  &:before {
+    top: 0px;
+    background-position: left top;
+    background: linear-gradient(-135deg, $color-outer $size / 2, transparent 0), linear-gradient(135deg, $color-outer $size / 2, transparent 0);
+    @include border-serrated-helper($size);
+  }
+}
+
+@mixin border-serrated-helper($size) {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: $size;
+  background-repeat: repeat-x;
+  background-size: $size $size;
+}
+
+@mixin card {
+  background-color: #fefefe;
+  @include box-shadow(1px 1px 14px -5px rgba(0, 0, 0, 0.5));
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+@mixin narrow-centered-content-container {
+  width: $page-width;
+  max-width: $max-page-width;
+  margin: 0 auto;
+  padding: $box-spacing 0;
+}
+
+@mixin medium-wide-centered-content-container {
+  width: $medium-wide-page-width;
+  max-width: $medium-wide-max-page-width;
+  margin: 0 auto;
+  padding: $box-spacing 0;
+}
+
+@mixin wide-centered-content-container {
+  width: $wide-page-width;
+  max-width: $wide-max-page-width;
+  margin: 0 auto;
+  padding: $box-spacing 0;
+}
+
+@mixin border-card {
+  border-radius: 3px;
+  border: $border-card-width solid #e5e5e5;
+  background: white;
+}
+
+@mixin textarea {
+  border-radius: 3px;
+  padding: $input-padding;
+  border: $input-border;
+}
+
+@mixin one-line-ellipsize {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+
+// Grid mixins (http://thesassway.com/intermediate/simple-grid-mixins)
+$box-spacing: 16px;
+
+@mixin row() {
+  font-size: 0;
+}
+
+@mixin col($col, $sum: 12, $horizontal-gap: $box-spacing/2, $vertical-gap: $box-spacing, $align: top) {
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-bottom: $vertical-gap;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @media only screen and (min-width: $breakpoint) {
+    width: percentage($col/$sum);
+    vertical-align: $align;
+    padding-bottom: 0px;
+    padding-left: $horizontal-gap;
+    padding-right: $horizontal-gap;
+  }
+}

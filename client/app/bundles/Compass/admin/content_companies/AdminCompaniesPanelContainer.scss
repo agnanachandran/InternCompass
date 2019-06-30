@@ -1,0 +1,10 @@
+.parent {
+  margin-bottom: $box-spacing;
+}
+
+.cardHeader {
+  background-color: $nav-color;
+  span {
+    color: white !important;
+  }
+}

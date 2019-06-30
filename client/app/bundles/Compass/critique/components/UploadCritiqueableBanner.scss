@@ -1,0 +1,43 @@
+.container {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  color: $dark-gray;
+  padding: 16px;
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+// .closeIcon {
+//   vertical-align: middle;
+//   cursor: pointer;
+//   color: $medium-gray;
+// }
+//
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.descriptionText {
+  margin-bottom: 16px;
+}
+
+.image {
+  height: 120px;
+  margin-right: 16px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

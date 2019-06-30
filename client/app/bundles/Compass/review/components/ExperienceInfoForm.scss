@@ -1,0 +1,29 @@
+.container {
+}
+
+.description {
+  margin-top: 8px;
+  height: 180px;
+  width: 80%;
+  resize: vertical;
+  font-size: 16px;
+  @include textarea;
+}
+
+.starContainer {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $label-color;
+}
+
+.descriptionContainer {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}

@@ -1,0 +1,31 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.companyItem {
+  margin-bottom: 8px;
+  margin-right: $companies-list-item-margin-right;
+}
+
+.title {
+  font-size: 24px;
+  color: $medium-gray;
+}
+
+.buttonContainer {
+  padding-right: $see-more-btn-padding-right;
+}
+
+.outerContainer {
+  margin-bottom: 20px;
+}
+
+.companiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+

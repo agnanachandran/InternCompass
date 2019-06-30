@@ -1,0 +1,18 @@
+.cardHeader {
+  background-color: $nav-color;
+  span {
+    color: white !important;
+  }
+}
+
+.columnLabel {
+  position: absolute;
+  right: 18%;
+  width: 10%;
+  text-align: center;
+}
+
+.header {
+  height: 35px;
+  position: relative;
+}

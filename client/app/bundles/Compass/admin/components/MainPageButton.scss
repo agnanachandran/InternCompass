@@ -1,0 +1,14 @@
+.mainPageButtonParent {
+  margin-bottom: $box-spacing;
+}
+
+.link {
+  color: white;
+  background-color: $nav-color;
+  padding: 6px 12px;
+  display: inline-block;
+
+  i {
+    margin-right: 5px;
+  }
+}

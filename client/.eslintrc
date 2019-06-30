@@ -1,0 +1,89 @@
+---
+parser: babel-eslint
+
+plugins:
+  - react
+
+globals:
+  __DEBUG_SERVER_ERRORS__: true
+  __SERVER_ERRORS__: true
+
+env:
+  browser: true
+  node: true
+  mocha: true
+
+rules:
+
+  ### Stylistic issues
+  comma-spacing: [2, {
+    before: false,
+    after: true
+  }]
+  eqeqeq: 2
+  id-length: [1, { min: 2, exceptions: [_, $, e, i, k, v] }]
+  indent: [1, 2, { SwitchCase: 1, VariableDeclarator: 2 }]
+  key-spacing: [2, { beforeColon: false, afterColon: true }]
+  no-console: 1
+  no-extra-semi: 2
+  no-trailing-spaces: 2
+  no-undef: 2
+  no-unused-vars: [2, { vars: all, args: none }]
+  no-var: 2
+  object-curly-spacing: [2, 'always']
+  prefer-arrow-callback: 2
+  semi: [2, 'always']
+  space-before-function-paren: [2, 'never']
+  quotes: [2, 'single', { 'avoidEscape': true }]
+
+  ### React
+  jsx-quotes: [1, prefer-single]
+  react/display-name: 0
+  react/jsx-boolean-value: [1, always]
+  react/jsx-curly-spacing: [1, never]
+  react/jsx-no-duplicate-props: [2, { ignoreCase: true }]
+  react/jsx-no-undef: 2
+  react/jsx-sort-prop-types: 0
+  react/jsx-sort-props: 0
+  react/jsx-uses-react: 2
+  react/jsx-uses-vars: 2
+  react/no-danger: 0
+  react/no-did-update-set-state: 0
+  react/no-unknown-property: 2
+  react/prop-types: 1
+  react/react-in-jsx-scope: 2
+  react/require-extension: [1, { extensions: [.js, .jsx] }]
+  react/self-closing-comp: 2
+  react/sort-comp: [2, {
+    order: [
+      static-methods,
+      lifecycle,
+      everything-else,
+      /^render.+$/,
+      render
+    ],
+    groups: {
+      lifecycle: [
+        displayName,
+        constructor,
+        mixins,
+        statics,
+        propTypes,
+        contextTypes,
+        defaultProps,
+        getDefaultProps,
+        getInitialState,
+        state,
+        getChildContext,
+        componentWillMount,
+        componentDidMount,
+        componentWillReceiveProps,
+        shouldComponentUpdate,
+        componentWillUpdate,
+        componentDidUpdate,
+        componentWillUnmount
+      ]
+    }
+  }]
+  react/wrap-multilines: 2
+  react/jsx-closing-bracket-location: 2

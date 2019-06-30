@@ -1,0 +1,17 @@
+.row {
+  margin-bottom: $box-spacing;
+}
+
+.todayStatParent {
+  @include col(3);
+  text-align: center;
+  > div {
+    padding: 16px;
+    font-size: 18px !important;
+    color: $medium-gray !important;
+  }
+}
+
+.todayStatNumber {
+  font-size: 36px;
+}

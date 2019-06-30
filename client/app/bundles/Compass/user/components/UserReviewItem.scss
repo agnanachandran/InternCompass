@@ -1,0 +1,52 @@
+$star-width: 95px;
+
+.card {
+  @include card;
+  margin: 15px 0 15px 0;
+  &:hover {
+    background: $focus-gray;
+  }
+  display: flex;
+  padding: 20px;
+}
+
+.columnTwo {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.date {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.companyName {
+  font-weight: bold;
+  display: inline;
+}
+
+.description {
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.averageRatingWidget {
+  color: $medium-gray;
+}
+
+.menu {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menuButton {
+  font-size: 14px;
+  color: $gray;
+}

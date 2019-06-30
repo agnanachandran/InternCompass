@@ -1,0 +1,43 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.commentBox {
+  width: 99%;
+  height: 100px;
+  margin:  auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  resize: none;
+  cursor: pointer;
+}
+
+.commentBox:focus {
+  border: 1px solid;
+  outline: none;
+  cursor: text;
+}
+
+@mixin generalButton {
+  height: 40px;
+  float: right;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  @include generalButton
+  margin-right: 10px;
+}
+
+.commentButton {
+  @include generalButton
+}
+
+.hidden {
+  display: none;
+}

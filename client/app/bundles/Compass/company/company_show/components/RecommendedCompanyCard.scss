@@ -1,0 +1,43 @@
+.container {
+  // Display horizontally on smaller displays, vertically otherwise
+  display: inline-flex;
+  margin-right: 32px;
+  @media only screen and (min-width: $breakpoint) {
+    display: flex;
+    margin-right: 0px;
+  }
+  cursor: pointer;
+  margin-top: 16px;
+  vertical-align: top;
+  width: 195px;
+  height: 100px;
+}
+
+.logoContainer {
+  display: inline-block;
+}
+
+.infoContainer {
+  display: inline-flex;
+  text-align: left;
+  margin-left: 12px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.name {
+  color: $medium-gray;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.subtitle {
+  color: $subtitle-gray;
+  font-size: 13px;
+}
+
+.rating {
+  color: $star-light-gray-color;
+}

@@ -1,0 +1,22 @@
+.xSmall {
+  font-size: 14px;
+}
+
+.small {
+  font-size: 20px;
+}
+
+.medium {
+  font-size: 24px;
+}
+
+.starsContainer {
+  white-space: nowrap;
+  color: $star-color;
+}
+
+.starHoverContainer {
+  position: relative;
+  display: inline-block;
+  margin: 0 2px;
+}

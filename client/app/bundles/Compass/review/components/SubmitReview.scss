@@ -1,0 +1,44 @@
+.container {
+  padding: 5px $review-component-padding 20px;
+  background-color: #f9f9f9;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.thanksContainer {
+  color: $label-color;
+  padding-top: 20px;
+}
+
+.anonymousAndSubmitContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anonymousContainer {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  label {
+    color: $label-color !important;
+    font-family: inherit !important;
+  }
+}
+
+.submitButton {
+  > button {
+    background-color: $button-primary-color !important;
+  }
+}
+
+.anonymousCheckbox svg {
+  fill: $button-primary-color !important;
+}
+
+.submit {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: top;
+}
+

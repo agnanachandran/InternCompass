@@ -1,0 +1,43 @@
+.container {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerContainer {
+  min-height: 280px;
+}
+
+.companyLogo {
+  margin-bottom: 15px;
+}
+
+.companyName {
+  margin: 3px;
+  @include font-family('Open Sans');
+  font-weight: 400;
+  font-size: 24px;
+  color: $dark-gray;
+}
+
+.jobTitle {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.reviewText {
+  color: #555555;
+  max-width: 80%;
+  margin: 5px auto 5px;
+}
+
+.link {
+  @include link;
+}
+
+.rating {
+  margin: 5px;
+}
+

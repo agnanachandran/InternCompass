@@ -1,0 +1,91 @@
+$review-info-padding: $company-review-padding;
+
+.container {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $breakpoint) {
+    flex-direction: row;
+  }
+  align-items: stretch;
+}
+
+.reviewHeaderContainer {
+  background-color: $review-gray;
+  padding: 10px $review-info-padding 10px;
+  // 250px + 10px of total padding from .ratingOuterContainer;
+  // Seems to be necessary for Safari since parent doesn't respect child's width
+  min-width: 260px;
+}
+
+.userInfoContainer {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userProfilePhoto {
+  margin: 3px auto;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.userName {
+  color: $medium-gray;
+}
+
+.reviewDate {
+  font-size: 14px;
+  padding: 0px;
+  color: #999;
+}
+
+.voterContainer {
+  padding-left: $review-info-padding;
+  padding-bottom: 16px;
+}
+
+.reviewInfoContainer {
+  color: $label-color;
+  background-color: white;
+}
+
+.reviewText {
+  font-size: 16px;
+  white-space: pre-line;
+  margin: 12px $review-info-padding 16px;
+}
+
+.showMore {
+  @include link;
+}
+
+.ratingsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.ratingOuterContainer {
+  width: 250px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratingName {
+  color: $medium-gray;
+}
+
+.ratingValueContainer {
+}

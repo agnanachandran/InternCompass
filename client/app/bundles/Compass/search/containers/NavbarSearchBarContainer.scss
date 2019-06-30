@@ -1,0 +1,49 @@
+.input {
+  height: 30px;
+  padding: 8px;
+  font-size: 15px;
+  background-color: transparent;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #999;
+  vertical-align: bottom;
+  outline: none;
+  @include transition(box-shadow 0.6s);
+  color: #eee;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.suggestion {
+  background-color: #fff;
+  border-radius: 3px;
+  color: $dark-gray;
+  cursor: pointer;
+  margin: 0;
+  padding: 8px;
+  border-top: none !important; // Prevent styling of this `li` from mobile navbar
+  word-wrap: break-word;
+}
+
+.searchIcon {
+  font-size: 16px;
+  line-height: 16px;
+  color: #aaa;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.form {
+  display: inline-flex;
+  float: right;
+  height: $navbar-outer-height;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}

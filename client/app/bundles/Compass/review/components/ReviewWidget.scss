@@ -1,0 +1,63 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.imgCol {
+  float: left;
+  width: 95px;
+}
+
+.contentCol {
+  width: 100%;
+}
+
+.infoHeaders {
+  width: 100%;
+}
+
+.headerContainer {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  margin-top: -5px;
+}
+
+.date {
+  float: right;
+}
+
+.faded {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.description {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  white-space: pre-line;
+  width: 100%;
+}
+
+.starContainer {
+  width: 300px;
+  height: 30px;
+}
+
+.starLabel {
+}
+
+.starWidget {
+  float: right;
+}
+
+.votes {
+  margin-top: 10px;
+}

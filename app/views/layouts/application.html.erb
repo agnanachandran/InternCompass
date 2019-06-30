@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InternCompass - Find Your Dream Internship</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500|Sanchez:400|Lato:400' rel='stylesheet' type='text/css'>
+
+  <%-# Sync updates with min-width in application_non_webpack.scss -%>
+  <meta name='viewport' content='width=550'>
+  <meta name='description' content="InternCompass is the premier destination for learning about internships. Interested in how much Facebook pays? Have a question about Deloitte's culture? Find out what it's like to work at these companies and many more at InternCompass.">
+  <meta property="og:description" content="InternCompass is the premier destination for learning about internships. Interested in how much Facebook pays? Have a question about Deloitte's culture? Find out what it's like to work at these companies and many more at InternCompass." />
+  <meta property="og:title" content="InternCompass - Find Your Dream Internship" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://interncompass.io/images/InternCompassBanner.jpeg" />
+  <meta property="og:url" content="https://interncompass.io" />
+
+  <%= env_stylesheet_link_tag(static: 'application_static',
+                              hot: 'application_non_webpack',
+                              media: 'all',
+                              'data-turbolinks-track' => "reload")  %>
+
+  <%= favicon_link_tag 'black_compass_transparent.ico' %>
+
+  <!-- These do not use turbolinks, so no data-turbolinks-track -->
+  <!-- This is to load the hot assets. -->
+  <%= env_javascript_include_tag(hot: ['http://localhost:3500/vendor-bundle.js',
+                                       'http://localhost:3500/app-bundle.js']) %>
+
+  <!-- These do use turbolinks -->
+  <%= env_javascript_include_tag(static: 'application_static',
+                                 hot: 'application_non_webpack',
+                                 'data-turbolinks-track' => "reload") %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<%= yield %>
+
+<%= redux_store_hydration_data %>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.logo {
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.img {
+  // This is needed to prevent the img from creating 'descender' space below it
+  // https://stackoverflow.com/a/43117768/1567230
+  vertical-align: middle;
+}

@@ -1,0 +1,9 @@
+.categoriesParent {
+  @include col(1, 5, $horizontal-gap: 0px);
+  border-right: 1px solid #EEE;
+}
+
+.selectedListItem {
+  color: white !important;
+  background-color: #2e3c54 !important;
+}

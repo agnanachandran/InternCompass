@@ -1,0 +1,26 @@
+$form-width: 420px;
+
+.logo {
+  font-size: 50px;
+  color: $light-gray;
+  margin-bottom: 15px;
+}
+
+.inner {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.75);
+  padding: 20px 60px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.outer {
+  height: 100%;
+  background: url('/images/signin_background.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

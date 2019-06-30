@@ -1,0 +1,118 @@
+$btn-color: $login-blue;
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.nameContainers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.smallInput {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  padding: 8px 10px;
+  width: 122px;
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: #777;
+}
+
+.input:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn {
+  -webkit-appearance: none; // Disable iOS default button styling
+  border-radius: 3px;
+  background: $btn-color;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  color: $light-gray;
+  margin: 0 0px 20px 0px;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($btn-color, 2%);
+  }
+}
+
+.link {
+  color: $light-gray;
+}
+
+.rememberMeAndForgotPasswordContainer {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $light-gray;
+}
+
+.rememberMeCheckboxContainer {
+  display: flex;
+  align-items: center;
+  width: 175px;
+  label {
+    color: $light-gray !important;
+    font-family: inherit !important;
+  }
+}
+
+.rememberMeCheckbox svg {
+  fill: $light-gray !important;
+}
+
+.spinnerContainer {
+  margin-bottom: 35px;
+  color: $light-gray;
+}
+
+.validatedInput {
+  position: relative;
+}
+
+.errorMsg {
+  color: $light-gray;
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 75%;
+  text-align: center;
+}
+
+.termsMsg {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 12px;
+  width: 300px;
+  text-align: center;
+}
+
+.termsLink {
+  color: $link-color;
+}

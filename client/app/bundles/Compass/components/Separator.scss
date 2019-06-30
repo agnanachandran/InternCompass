@@ -1,0 +1,28 @@
+.separator {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  width: 300px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.separator::before,
+.separator::after {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  top: 24px;
+  background-color: #fff;
+  content: '';
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}

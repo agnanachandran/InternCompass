@@ -1,0 +1,36 @@
+.inputParent {
+  display: inline-block;
+  position: relative;
+  input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.suggestionsContainer {
+  border-radius: 3px;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1px;
+  background-color: #fafafa;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  max-height: 250px;
+  position: absolute;
+  z-index: 100;
+  box-shadow: 0 0 3px #CFD8DC;
+}
+
+.suggestion {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+}
+
+.suggestionFocused {
+  background-color: #ddd;
+  border-radius: 4px;
+}

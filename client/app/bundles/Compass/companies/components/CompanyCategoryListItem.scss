@@ -1,0 +1,32 @@
+.container {
+  @include border-card();
+  height: 200px;
+  width: $companies-list-item-width;
+  padding: $companies-list-item-padding;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    background: $focus-gray;
+  }
+}
+
+.name {
+  color: $medium-gray;
+  font-size: 18px;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.subtitle {
+  color: $subtitle-gray;
+  font-size: 13px;
+}
+
+.rating {
+  color: $star-light-gray-color;
+}

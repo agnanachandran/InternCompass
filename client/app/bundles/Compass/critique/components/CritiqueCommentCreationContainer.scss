@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.signInPrompt {
+  color: $medium-gray;
+  font-size: 15px;
+  text-align: center;
+}
+
+.signInLink {
+  color: $link-color;
+}
+
+.commentBox {
+  @include textarea;
+  resize: vertical;
+  height: 140px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.invisible {
+  visibility: hidden;
+}

@@ -1,0 +1,70 @@
+$image-width: 120px;
+$image-margin: 8px;
+$overviewContent-margin: 24px;
+
+.container {
+  background-color: white;
+}
+
+.topOverview {
+  @include wide-centered-content-container;
+  display: flex;
+  padding: 40px 0px 0px;
+  justify-content: space-between;
+  @include row;
+}
+
+.overviewContent {
+  width: calc(#{$page-width} - #{$image-width} - #{$image-margin});
+  margin-left: $overviewContent-margin;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.name {
+  font-size: 26px;
+  color: $dark-gray;
+}
+
+.location {
+  font-size: 16px;
+  color: $dark-gray;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 16px;
+  color: $subtitle-gray;
+  margin-top: 12px;
+}
+
+.companyMetaDataChild {
+  font-size: 16px;
+  display: inline-block;
+  color: $subtitle-gray;
+  margin-right: 12px;
+}
+
+.companyMetaDataIcon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.companyLink {
+  color: $link-color;
+}
+
+.avgRatingParent {
+  font-size: 18px;
+}
+
+.avgRatingParentNumber {
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+  font-weight: 300;
+}
+
+.avgRatingParentStars {
+  color: $medium-gray;
+}

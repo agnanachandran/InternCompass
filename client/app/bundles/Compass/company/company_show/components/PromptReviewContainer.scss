@@ -1,0 +1,49 @@
+$placeholder-image-length: 40px;
+
+.outerContainer {
+  margin-bottom: 16px;
+}
+
+.container {
+  display: flex;
+}
+
+.userInfoContainer {
+  background-color: #f1f1f1;
+  width: 20%;
+  min-width: 100px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.userInfoInnerContainer {
+  padding: 16px;
+}
+
+.userPlaceholderProfilePhoto {
+  height: $placeholder-image-length;
+  border-radius: $placeholder-image-length/2;
+  margin-bottom: 2px;
+}
+
+.userPlaceholderName {
+  color: #444;
+}
+
+.reviewInfoContainer {
+  display: inline-block;
+}
+
+.reviewInfoInnerContainer {
+  padding-top: 20px;
+  padding-left: 32px;
+}
+
+.reviewPrompt {
+  color: #555;
+}
+
+.link {
+  color: $link-color;
+  cursor: pointer;
+}

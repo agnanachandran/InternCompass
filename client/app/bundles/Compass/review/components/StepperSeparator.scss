@@ -1,0 +1,22 @@
+.separator {
+  overflow: hidden;
+  text-align: center;
+}
+.separator:before,
+.separator:after {
+  background-color: #ccc;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.separator:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.separator:after {
+  left: 0.5em;
+  margin-right: -50%;
+}

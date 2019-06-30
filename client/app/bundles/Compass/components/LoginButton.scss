@@ -1,0 +1,56 @@
+$facebook-color: #3b5998;
+
+$radius: 3px;
+$height: 40px;
+$width: 300px;
+
+@mixin btn($btn-color) {
+  width: $width;
+  height: $height;
+  background: $btn-color;
+  border-width: 0;
+  border-radius: $radius;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    background: darken($btn-color, 2%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.text {
+  color: white;
+  line-height: $height;
+  font-size: 13px;
+}
+
+.icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@mixin iconSpan($btn-color) {
+  font-size: 22px;
+  float: left;
+  background: darken($btn-color, 10%);
+  height: $height;
+  width: $height;
+  border-radius: $radius;
+  position: relative;
+}
+
+.fbIcon {
+  @include iconSpan($facebook-color);
+}
+
+.fbBtn {
+  @include btn($facebook-color);
+}

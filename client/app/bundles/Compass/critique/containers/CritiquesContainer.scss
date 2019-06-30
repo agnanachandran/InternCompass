@@ -1,0 +1,19 @@
+.userCritiquesContainer {
+  @include narrow-centered-content-container();
+}
+
+.critiquesHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.critiquesHeaderText {
+  color: $medium-gray;
+  font-weight: 400;
+}
+
+.viewMoreCritiques {
+  margin-top: 16px;
+  text-align: center;
+}

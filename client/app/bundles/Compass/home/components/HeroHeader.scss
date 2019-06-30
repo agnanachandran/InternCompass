@@ -1,0 +1,20 @@
+.header {
+  height: 280px;
+  margin-top: -($navbar-outer-height+20); // So that the background can show through the navbar
+  padding-top: ($navbar-height+150px);
+  text-align: center;
+  // Source: https://images.unsplash.com/photo-1462007361476-49e695345154?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=
+  background-image: url('/images/home_bg.jpg');
+  background-size: 100% 100%;
+}
+
+.headerText {
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  @include font-family('Sanchez');
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5),
+               0px 2px 2px rgba(0, 0, 0, 0.5),
+               0px 2px 2px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,13 @@
+.star {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.starReadOnly {
+  margin: 0 2px;
+}
+
+.hover {
+  color: lighten($star-color, 5%);
+}

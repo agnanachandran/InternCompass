@@ -1,0 +1,47 @@
+.listItemParent {
+  .listItemRow {
+    height: 40px;
+    > div {
+      display: inline-block;
+      padding: 0 3px;
+      box-sizing: border-box;
+      overflow: hidden;
+      white-space: nowrap;
+      line-height: 40px;
+      height: 40px;
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    background-color: #EEE;
+  }
+  border-bottom: 1px solid #BBB;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid #888;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  &:hover {
+    color: $material-blue;
+    border: 1px $material-blue solid;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.buttonIcon {
+  margin-right: 3px;
+}

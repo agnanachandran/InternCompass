@@ -1,0 +1,44 @@
+.input {
+  height: 38px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px 0px 0px 3px;
+  border: none;
+  vertical-align: bottom;
+  outline: none;
+  border: 1px solid #dfdfdf;
+  border-right: none;
+  @include transition(box-shadow 0.6s);
+  color: #333;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #dfdfdf;
+  box-shadow: 0 0 5px #dfdfdf;
+  @include transition(box-shadow 0.3s);
+}
+
+.submitButton {
+  padding: 0px; // Prevent padding set by iOS
+  display: inline-block;
+  border-radius: 0px 3px 3px 0px;
+  width: 8%;
+  max-width: 65px;
+  height: 38px;
+  border: none;
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: top;
+  color: white;
+  background-color: $material-blue;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($material-blue, 2%);
+  }
+}
+
+.form {
+  text-align: center;
+  width: 100%;
+}

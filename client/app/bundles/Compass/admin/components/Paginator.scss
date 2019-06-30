@@ -1,0 +1,48 @@
+.paginationParent {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0px;
+  margin-top: 20px;
+  font-weight: bold;
+  li {
+    display: inline;
+    a {
+      color: $nav-color;
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 6px 12px;
+      float: left;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+  .active {
+    a {
+      background-color: $nav-color !important;
+      border: 1px solid $nav-color;
+      color: white;
+      cursor: default;
+    }
+  }
+  .disabled {
+    a {
+      color: #aaa;
+      background-color: white !important;
+      cursor: default;
+    }
+  }
+  .break {
+    color: $nav-color;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    float: left;
+    position: relative;
+  }
+}

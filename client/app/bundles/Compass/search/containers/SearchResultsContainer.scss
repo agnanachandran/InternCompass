@@ -1,0 +1,39 @@
+.searchBarContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.searchBarInnerContainer {
+  @include narrow-centered-content-container;
+  @media only screen and (min-width: $breakpoint) {
+    min-width: 900px;
+    display: flex;
+    align-items: center;
+  }
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.searchBar {
+  @include col(9);
+}
+
+.controls {
+  @include col(3);
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.filtersContainer {
+  @include col(4);
+}
+
+.resultsInfoContainer {
+  @include col(8);
+}
+
+.filtersAndResultsContainer {
+  @include narrow-centered-content-container;
+}
+

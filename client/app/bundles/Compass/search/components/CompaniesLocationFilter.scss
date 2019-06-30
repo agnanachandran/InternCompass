@@ -1,0 +1,25 @@
+.filterContainer {
+  @include border-card;
+  padding: 12px;
+  color: $medium-gray;
+}
+
+.locationLabel {
+  color: $dark-gray;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.locationDropdown {
+  margin-top: 4px;
+}
+
+.locationCheckbox {
+  font-size: 15px;
+  margin-bottom: 5px;
+  svg {
+    fill: $medium-gray !important;
+  }
+}

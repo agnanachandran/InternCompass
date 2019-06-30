@@ -1,0 +1,48 @@
+.container {
+  padding: 10px 15% 35px;
+  text-align: center;
+  background-color: white;
+}
+
+.header {
+  font-weight: 400;
+  font-size: 30px;
+  color: $dark-gray;
+  margin-top: 10px;
+}
+
+.arrow {
+  font-size: 80px !important;
+  color: grey;
+  cursor: pointer;
+}
+
+.review {
+  @include transition(opacity 0.3s ease-in);
+}
+
+@mixin circle() {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  @include transition(background-color 0.3s ease);
+}
+
+.circleTarget {
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.filledCircle {
+  @include circle();
+  background-color: gray;
+}
+
+.emptyCircle {
+  @include circle();
+}

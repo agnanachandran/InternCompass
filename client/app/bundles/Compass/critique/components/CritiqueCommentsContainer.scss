@@ -1,0 +1,38 @@
+.container {
+  background-color: white;
+  padding: 12px;
+  border-radius: 5px 5px 1px 1px;
+}
+
+.header {
+  border: 1px solid $border-gray;
+  border-bottom: none;
+  border-radius: 5px 5px 1px 1px;
+  color: $dark-gray;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+}
+
+.commentsPlaceholder {
+  background-color: #f9f9f9;
+  color: $dark-gray;
+  font-size: 15px;
+  display: flex;
+  padding: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.commentsContainer {
+  border-left: 1px solid $border-gray;
+  border-right: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+  max-height: 700px;
+  overflow: scroll;
+}

@@ -1,0 +1,19 @@
+.outerContainer {
+  padding: 20px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0px auto;
+  border-radius: 5px !important;
+}
+
+.header {
+  color: white;
+  font-weight: 400;
+  padding: 16px;
+  text-align: center;
+  border-radius: 3px 3px 0px 0px;
+  background-color: $material-blue;
+  border-bottom: 2px solid $light-gray;
+}

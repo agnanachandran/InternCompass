@@ -1,0 +1,21 @@
+.container {
+  margin-bottom: 12px;
+}
+
+.perksTextContainer {
+  color: $label-color;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.noPerksText {
+  color: gray;
+  font-size: 16px;
+}
+
+.perksTagsContainer {
+  max-width: 600px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+

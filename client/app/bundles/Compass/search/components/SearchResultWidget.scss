@@ -1,0 +1,45 @@
+.container {
+  margin: 0 auto;
+  padding: 25px;
+  margin-bottom: 10px;
+  @include border-card;
+
+  &:hover {
+    background: $focus-gray;
+  }
+}
+
+.imgCol {
+  float: left;
+  width: 75px;
+  height: 100%;
+}
+
+.contentCol {
+  width: 100%;
+}
+
+.name {
+  font-size: 24px;
+  color: $dark-gray;
+}
+
+.info {
+  color: $subtitle-gray;
+  font-size: 14px;
+}
+
+.faded {
+  font-weight: 400;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+  overflow: hidden;
+  padding-top: 10px;
+  color: $dark-gray;
+}

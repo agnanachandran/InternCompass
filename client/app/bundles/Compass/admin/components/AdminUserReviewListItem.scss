@@ -1,0 +1,79 @@
+.userReviewListItemParent {
+  .userReviewPreview {
+    cursor: pointer;
+    > div {
+      display: inline-block;
+      padding: 0 3px;
+      box-sizing: border-box;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  &:hover {
+    background-color: #EEE;
+  }
+}
+
+.userReviewFullDetails {
+  display: block !important;
+  padding: 12px !important;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.markAsSpam {
+  color: white;
+  background-color: red;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.unmarkAsSpam {
+  color: white;
+  background-color: blue;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.colId {
+  width: 3%;
+}
+
+.colCreatedAt {
+  width: 17%;
+}
+
+.colCompanyName {
+  width: 15%;
+}
+
+.colJobTitle {
+  width: 20%;
+}
+
+.colUserEmail {
+  width: 15%;
+}
+
+.colSpamLabel {
+  width: 5%;
+}
+
+.colCurateCheckbox {
+  width: 5%;
+}
+
+.colExpandButton {
+  width: 15%;
+}
+
+.checkbox svg {
+  fill: $nav-color !important;
+}

@@ -1,0 +1,68 @@
+.container {
+}
+
+.description {
+  color: #777;
+}
+
+.voteContainer {
+  text-align: left;
+  display: inline-block;
+}
+
+.disabled {
+  color: #777;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.clickable {
+  color: #555;
+  cursor: pointer;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+  padding: 3px 6px;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.count {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+}
+
+@mixin vote {
+  display: inline-block;
+}
+
+.upvote {
+  @include vote;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+.downvote {
+  @include vote;
+  margin-right: 10px;
+}
+
+@mixin selectedVote {
+  color: white;
+  font-weight: bold;
+}
+
+.selectedUpvote {
+  @include selectedVote;
+  background-color: $upvote-color;
+  border-color: darken($upvote-color, 20%);
+}
+
+.selectedDownvote {
+  @include selectedVote;
+  background-color: $downvote-color;
+  border-color: darken($downvote-color, 20%);
+}
+
